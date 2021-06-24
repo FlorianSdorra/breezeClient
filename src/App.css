@@ -1,38 +1,42 @@
 .App {
   text-align: center;
+  height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.screen{
+  height: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.mainChart{
+  margin: 70px;
+  margin-bottom: 0;
+  height: 80%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.valChart{
+  border: .1px solid black;
+  margin-top: 50px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-content: center;
+  background-color: rgba(226, 226, 240, 0.144);
+  margin: 70px;
 }
 
-.App-link {
-  color: #61dafb;
+.chartChild{
+  padding: 10px;
+  flex-grow: 1;
+  margin: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.chartChild > * {
+  padding: 5px 10px;
+  /* border: black 1px solid; */
+  margin: 5px;
+  background-color: white;
+}
+
+.withB{
+  border: 1px solid black;
 }
